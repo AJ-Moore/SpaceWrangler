@@ -16,7 +16,7 @@ function _init()
 	hud = create_hud()
 	main_menu = create_main_menu()
 	gameover = create_gameover_menu()
-	gamestate="gameover"
+	gamestate="main_menu"
 	
 	reset_game()
 	//music(2)
@@ -549,10 +549,10 @@ function create_main_menu()
 		menu_index = 1,
 		down=false,
 	 menu_items={
-	 	"play",
-	 	"select vehicle",
-	 	"format hdd",
-	 	"credits"
+	 	"play"
+	 	//"select vehicle",
+	 	//"format hdd",
+	 	//"credits"
 	 },
 	 init=function(m)
 			m.wave=create_wave_text(80,30,"now in 2d!!",10)
